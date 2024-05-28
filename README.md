@@ -1,35 +1,28 @@
-# machineLearning
-Simple Machine Learning model
+# Olympic Medal Prediction Model
 
-### what is a predictive model??
+## Overview
+This machine learning project aims to predict the number of medals an Olympic team will win based on historical data. The model uses a dataset containing information about teams, countries, years, number of athletes, average age, previous medals, and medals won.
 
-- Using historical data use predictibe modelling to determine a certain output.
-- Essentially, with predictive programming, you collect historical data, analyze it, and train a model that detects specific patterns so that when it encounters new data later on, it’s able to predict future results.
-- Different algorithms are, neural networks, decision trees, k-means clustering and Naive Bayes.
+## Data Analysis
+The initial analysis involves reading the data from a CSV file using Pandas and exploring the relationships between different variables using correlation and Seaborn's plotting capabilities.
 
-  ### Explore the data set
+## Data Cleaning
+Data cleaning steps include handling missing values, which are prevalent in teams that have not participated in previous Olympics, and removing unnecessary columns from the dataset.
 
-  - It’s important to know your way around the data you’re working with so you know how to build your predictive model. For this reason, Python has several functions that will help you with your explorations.
-#### info()
-- The info() function shows us the data type of each column, number of columns, memory usage, and the number of records in the dataset:
+## Model Training and Testing
+The dataset is split into training and test sets based on the year. A Linear Regression model from Scikit-learn is trained on the training set and used to make predictions on the test set.
 
-`` df.info() ``
+## Predictions
+Predictions are made for the number of medals won by teams. The model ensures that predictions are non-negative and rounded to the nearest whole number.
 
-#### Shape 
+## Error Analysis
+The Mean Absolute Error (MAE) metric is used to evaluate the model's performance. Further analysis is conducted to understand the error distribution across different teams and to identify areas for improvement.
 
-The shape function displays the number of records and columns:
+## Improvements
+Suggestions for improving the model include adding more predictors and trying different machine learning models.
 
-df.shape
+## Usage
+To use this model, simply run the Python script provided in the repository. Ensure you have the required libraries installed, including Pandas, Seaborn, and Scikit-learn.
 
-#### describe()
-
-The describe() function summarizes the dataset’s statistical properties, such as count, mean, min, and max:
-
-df.describe()
-
-- This model uses the Linear regression model as I am just starting out, but for my next project, the euro 2024 predictor, I will use both the linear and logistic regression model, using a linear graph and signmoid curve graph respectively.
-
-
-
-
-
+## Contributing
+Contributions to this project are welcome. Please feel free to fork the repository, make changes, and submit a pull request.
