@@ -27,6 +27,8 @@ The describe() function summarizes the dataset’s statistical properties, such 
 
 df.describe()
 
+- This model uses the Linear regression model as I am just starting out, but for my next project, the euro 2024 predictor, I will use both the linear and logistic regression model, using a linear graph and signmoid curve graph respectively.
+
 
 
 
